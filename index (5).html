@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalyeKaalaman - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to open the popup box
+        function openPopup() {
+            var name = prompt("Please enter your name:");
+            var email = prompt("Please enter your email:");
+            
+            if (name && email) {
+                alert("Thank you for submitting your information!\nName: " + name + "\nEmail: " + email);
+            } else {
+                alert("Both name and email are required!");
+            }
+        }
+    </script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalyeKaalaman</title>
+    <style>
+        /* Import the Poppins font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+        :root {
+            --gradient-primary: linear-gradient(90deg, #3a8edb, #007ab8); /* Darker blue gradient */
+        }
+
+        /* Header with Gradient */
+        header {
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5em 2.5em; /* Increased padding for larger height */
+            color: white;
+        }
+
+        /* Brand Name and Logo */
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand img {
+            height: 70px; /* Increased size for the logo */
+            margin-right: 15px; /* Slightly larger margin */
+        }
+
+        .brand h1 {
+            color: white;
+            font-size: 2.2em; /* Larger font size */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation List */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2.5em; /* Increased gap for better spacing */
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        /* Navigation Links */
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em; /* Slightly larger font size */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            padding: 0.6em 1.2em; /* Increased padding for better clickable area */
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 8px; /* Slightly more rounded corners */
+        }
+
+        nav ul li a:hover {
+            color: #3a8edb;
+            background-color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1.2em;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/Blue%20Flat%20Illustrative%20Finance%20Company%20Logo.png" alt="KalyeKaalaman Logo">
+            <h1>KalyeKaalaman</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="events.html">Programs</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+
+
+
+    
+    <section id="home">
+    <!-- Button to trigger the popup -->
+    <div class="popup-button-container">
+        <button onclick="openPopup()" class="popup-button">Want to be part of KalyeKaalaman Team?</button>
+    </div>
+    <div class="hero">
+        <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/KALYEKAALAMAN.png" alt="KalyeKaalaman Background">
+    </div>
+</section>
+
+
+<!-- Latest News Section -->
+<section id="latest-news">
+    <div class="latest-news-container">
+        <!-- News Header Image -->
+        <div class="news-header">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/opt%202%20(1).png" alt="Latest News Header">
+        </div>
+        <div class="section-content">
+            
+
+     <!-- News Articles Preview -->
+        <div class="news-preview">
+            <!-- Article 1 -->
+            <div class="news-article" onclick="openArticle('article1')">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/1.jpg" alt="Article Image">
+                <h4>The Struggles of Homeless Children in Accessing Education in the Philippines</h4>
+                <p>Homeless children in the Philippines face significant barriers to education, including lack of permanent addresses, transportation issues, and inadequate parental support. These factors prevent them from enrolling in formal schooling, and while alternative learning systems (ALS) exist, they are underfunded and limited in reach. Expanding inclusive education programs and improving government and NGO efforts are crucial to providing better access to education for homeless children.</p>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="news-article" onclick="openArticle('article2')">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/2.jpg" alt="Article Image">
+                <h4>The Role of NGOs in Providing Education for Homeless Children in Metro Manila</h4>
+                <p>NGOs in Metro Manila provide homeless children with educational opportunities through mobile learning programs and alternative learning systems (ALS). These organizations offer flexible, non-formal education tailored to the unique circumstances of homeless children, alongside essential support services like health care and emotional assistance. NGOs play a key role in bridging the gap between street life and formal education.</p>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="news-article" onclick="openArticle('article3')">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/3.jpg" alt="Article Image">
+                <h4>The Impact of Street Life on the Education of Homeless Children</h4>
+                <p>Street life negatively impacts homeless children's education by exposing them to trauma, malnutrition, and lack of stability. Emotional and psychological distress, as well as poor nutrition, hinder their ability to learn. Addressing these challenges requires a comprehensive approach that includes psychological support, health services, and educational programs tailored to the needs of street children. </p>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="news-article" onclick="openArticle('article4')">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/4.jpg" alt="Article Image">
+                <h4>Policy Recommendations for Improving Education for Homeless Children in the Philippines</h4>
+                <p>Current policies in the Philippines fail to adequately address the unique educational needs of homeless children. Recommendations include flexible enrollment processes, expanded alternative learning systems (ALS), better coordination between the government and NGOs, and stronger enforcement of child protection laws. These measures would help homeless children gain access to education and break the cycle of poverty.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Styling for h4 (dark blue color) */
+.news-article h4 {
+    color: darkblue; /* Dark blue color for h4 */
+    text-align: center; /* Center align the h4 */
+}
+
+/* Styling for p (italicized text) */
+.news-article p {
+    font-style: italic; /* Italicize the p text */
+    text-align: justify; /* Justify align the p text */
+}
+</style>
+<!-- Modal for Article Pop-up -->
+<div id="article-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeArticle()">&times;</span>
+        <div id="article1" class="article-content">
+            <h4>Full Article 1</h4>
+            <p>This is the full article content for Article 1...</p>
+        </div>
+        <div id="article2" class="article-content">
+            <h4>Full Article 2</h4>
+            <p>This is the full article content for Article 2...</p>
+        </div>
+        <div id="article3" class="article-content">
+            <h4>Full Article 3</h4>
+            <p>This is the full article content for Article 3...</p>
+        </div>
+        <div id="article4" class="article-content">
+            <h4>Full Article 4</h4>
+            <p>This is the full article content for Article 4...</p>
+        </div>
+    </div>
+</div>
+
+<!-- What Inspires Us Section -->
+<section id="what-inspires-us">
+    <div class="section-content">
+    </div>
+    <!-- Google Drive Video -->
+    <div class="event-video-container">
+        <h3>Empowering children through education, for a better tomorrow</h3>
+        <p>At KalyeKaalaman, we are dedicated to improving the lives of street children in the Philippines by providing access to education, ensuring a brighter future for them and creating lasting change for our communities.</p>
+        <iframe src="https://drive.google.com/file/d/1K1qKgxnAM4v3cStTt3OAUInVkP-10OxY/preview" width="640" height="480" allow="autoplay"></iframe>
+        <!-- Blue Button -->
+        <a href="about.html" class="blue-button">Get to know us more!</a>
+    </div>
+</section>
+
+<!-- Add some CSS for styling -->
+<style>
+    /* Apply Poppins font family and dark blue color to the h3 element */
+    h3 {
+        font-family: 'Poppins', sans-serif; /* Poppins font */
+        font-size: 24px; /* Adjust size to fit your design */
+        color: #003366; /* Dark blue color */
+        text-align: center; /* Centering the heading */
+    }
+
+    /* Italicize, justify, and center the paragraph text */
+    p {
+        font-style: italic;
+        text-align: center; /* Center-aligns the text */
+        width: 80%; /* Restrict width for better readability */
+        margin: 0 auto; /* Center the paragraph container */
+        font-size: 18px; /* Adjust font size if needed */
+        line-height: 1.6; /* Make the text more readable */
+    }
+
+    /* Centering the video container */
+    #what-inspires-us .event-video-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px; /* Adds space between the video and button */
+    }
+
+    /* Blue Button Styling */
+    .blue-button {
+        display: inline-block;
+        padding: 15px 30px; /* Increased padding for a bigger button */
+        margin-top: 20px;
+        background-color: #007bff; /* Blue color */
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px; /* Bigger font size */
+        width: auto; /* Ensures the button width adjusts automatically */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and hover effect */
+    }
+
+    .blue-button:hover {
+        background-color: #0056b3; /* Darker blue when hovered */
+        transform: scale(1.1); /* Slightly enlarges the button on hover */
+    }
+</style>
+
+<!-- Optional: Add link to Google Fonts for Poppins font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-advocacy">
+        </div>
+        <div class="footer-subscribe">
+            <h4>Subscribe to our Mailing List</h4>
+            <p>We’d love to have you on our next outreach! By joining our mailing list, we’ll let you know what, when, and where our next project will be. Are you in?</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61568552099332" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design%20(2).png" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design.png" alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design%20(1).png" alt="Instagram Icon">
+            </a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024 KalyeKaalaman. All rights reserved.</p>
+  <p><small>All images, graphics, and media used on this site are not owned by KalyeKaalaman. Credits to their respective owners. We sincerely appreciate their contributions to the project.</small></p>        </div>
+    </div>
+</footer>

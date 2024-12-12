@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support KalyeKaalaman</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert for popup messages -->
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalyeKaalaman</title>
+    <style>
+        /* Import the Poppins font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+        :root {
+            --gradient-primary: linear-gradient(90deg, #3a8edb, #007ab8); /* Darker blue gradient */
+        }
+
+        /* Header with Gradient */
+        header {
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5em 2.5em; /* Increased padding for larger height */
+            color: white;
+        }
+
+        /* Brand Name and Logo */
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand img {
+            height: 70px; /* Increased size for the logo */
+            margin-right: 15px; /* Slightly larger margin */
+        }
+
+        .brand h1 {
+            color: white;
+            font-size: 2.2em; /* Larger font size */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation List */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2.5em; /* Increased gap for better spacing */
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        /* Navigation Links */
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em; /* Slightly larger font size */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            padding: 0.6em 1.2em; /* Increased padding for better clickable area */
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 8px; /* Slightly more rounded corners */
+        }
+
+        nav ul li a:hover {
+            color: #3a8edb;
+            background-color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1.2em;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/Blue%20Flat%20Illustrative%20Finance%20Company%20Logo.png" alt="KalyeKaalaman Logo">
+            <h1>KalyeKaalaman</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="events.html">Programs</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+    
+    <!-- Donation Impact Modules -->
+<div class="donation-impact">
+    <h3>What Your Donation Supports</h3>
+    <p class="impact-description">Every donation you make will go toward helping street children with:</p>
+    
+    <!-- Donation impact list -->
+    <div class="donation-list">
+        <div class="donation-item">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/1%20(1).png" alt="Education Symbol" class="impact-icon">
+            <p>Free education and tutoring</p>
+        </div>
+        <div class="donation-item">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/1%20(5).png" alt="Health Symbol" class="impact-icon">
+            <p>Access to hygiene and health workshops</p>
+        </div>
+        <div class="donation-item">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/1%20(4).png" alt="School Supplies Symbol" class="impact-icon">
+            <p>Provision of school supplies and essentials</p>
+        </div>
+        <div class="donation-item">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/1%20(3).png" alt="Activities Symbol" class="impact-icon">
+            <p>Opportunities for extracurricular activities</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Donation Section -->
+<section id="donate" class="donate-section">
+    <div class="donate-container">
+        <h2>Support Our Cause</h2>
+        <p>Your contributions help us provide free education and essential resources to homeless children.</p>
+
+        <!-- Donation Amount Selection -->
+        <div class="donation-options">
+            <h3>Choose Your Donation Amount</h3>
+            <div class="amounts">
+                <button class="amount-btn" onclick="selectAmount(100)">₱100</button>
+                <button class="amount-btn" onclick="selectAmount(500)">₱500</button>
+                <button class="amount-btn" onclick="selectAmount(1000)">₱1000</button>
+                <button class="amount-btn" onclick="selectAmount(5000)">₱5000</button>
+            </div>
+        </div>
+
+        <!-- Donation Form -->
+        <form id="donate-form" class="donate-form" onsubmit="submitDonation(event)">
+            <label for="custom-amount">Or Enter Your Custom Amount:</label>
+            <input type="number" id="custom-amount" placeholder="Enter amount in ₱" required>
+
+            <div class="payment-methods">
+                <label for="payment-method">Select Payment Method:</label>
+                <select id="payment-method" required>
+                    <option value="gcash">GCash</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+
+            <button type="submit" class="donate-btn">Donate Now</button>
+        </form>
+
+        <!-- Progress Section -->
+        <div class="progress-section">
+            <h3>Help Us Reach Our Goal:</h3>
+            <progress id="donation-progress" value="0" max="100"></progress>
+            <p id="donation-status">₱0 of ₱50,000 goal reached!</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    let selectedAmount = 0;
+
+    function selectAmount(amount) {
+        selectedAmount = amount;
+        document.getElementById("custom-amount").value = amount;
+    }
+
+    function submitDonation(event) {
+        event.preventDefault();
+        const amount = document.getElementById("custom-amount").value;
+        const paymentMethod = document.getElementById("payment-method").value;
+
+        // Simulate donation progress
+        const donationProgress = document.getElementById("donation-progress");
+        donationProgress.value = Math.min(donationProgress.value + (amount / 50000) * 100, 100); // Increment donation progress
+
+        document.getElementById("donation-status").innerText = `₱${donationProgress.value * 50000 / 100} of ₱50,000 goal reached!`;
+
+        Swal.fire({
+            title: 'Thank you for your donation!',
+            text: `You have donated ₱${amount}. Your support is greatly appreciated!`,
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+
+        // Reset form after donation
+        document.getElementById("donate-form").reset();
+        selectedAmount = 0;
+    }
+</script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-advocacy">
+        </div>
+        <div class="footer-subscribe">
+            <h4>Subscribe to our Mailing List</h4>
+            <p>We’d love to have you on our next outreach! By joining our mailing list, we’ll let you know what, when, and where our next project will be. Are you in?</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61568552099332" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design%20(2).png" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design.png" alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design%20(1).png" alt="Instagram Icon">
+            </a>
+        </div>
+        <div class="footer-text">
+            <p style="color: white; font-size: 1.2rem;">&copy; 2024 KalyeKaalaman. All rights reserved.</p>
+            <p><small style="color: white; font-size: 1rem;">All images, graphics, and media used on this site are not owned by KalyeKaalaman. Credits to their respective owners. We sincerely appreciate their contributions to the project.</small></p>
+        </div>
+    </div>
+</footer>

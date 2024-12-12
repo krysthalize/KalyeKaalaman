@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About KalyeKaalaman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalyeKaalaman</title>
+    <style>
+        /* Import the Poppins font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+        :root {
+            --gradient-primary: linear-gradient(90deg, #3a8edb, #007ab8); /* Darker blue gradient */
+        }
+
+        /* Header with Gradient */
+        header {
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5em 2.5em; /* Increased padding for larger height */
+            color: white;
+        }
+
+        /* Brand Name and Logo */
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand img {
+            height: 70px; /* Increased size for the logo */
+            margin-right: 15px; /* Slightly larger margin */
+        }
+
+        .brand h1 {
+            color: white;
+            font-size: 2.2em; /* Larger font size */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation List */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2.5em; /* Increased gap for better spacing */
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        /* Navigation Links */
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em; /* Slightly larger font size */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            padding: 0.6em 1.2em; /* Increased padding for better clickable area */
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 8px; /* Slightly more rounded corners */
+        }
+
+        nav ul li a:hover {
+            color: #3a8edb;
+            background-color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1.2em;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/Blue%20Flat%20Illustrative%20Finance%20Company%20Logo.png" alt="KalyeKaalaman Logo">
+            <h1>KalyeKaalaman</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="events.html">Programs</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb; /* Light background */
+            color: #333;
+        }
+
+        h2, h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 42px;
+            color: #1e2a47;
+            margin-top: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-top: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #34495e;
+            transition: color 0.3s ease, transform 0.3s ease;
+            margin-bottom: 25px;
+        }
+
+        /* About Us Section */
+        #about {
+            padding: 50px 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff; /* White background for About Us */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sub-sections: Mission, Vision, and What is KalyeKaalaman */
+        .section-content {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .section-content h3 {
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 28px;
+            color: #1d3a5e;
+        }
+
+        .section-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #34495e;
+            transition: color 0.3s ease, transform 0.3s ease;
+            margin-bottom: 25px;
+        }
+
+        /* Hover Effects for Titles */
+        .section-content h3:hover {
+            transform: translateX(10px);
+            color: #3498db;
+        }
+
+        /* Hover Effects for Paragraphs */
+        .section-content p:hover {
+            color: #3498db;
+            transform: translateY(-5px);
+            background-color: #ffffff;
+            padding-left: 15px;
+            border-left: 5px solid #3498db;
+            cursor: pointer;
+        }
+
+        
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #about {
+                padding: 40px 10px;
+            }
+
+            .section-content {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .team-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+    
+    <!-- Story of KalyeKaalaman Section -->
+<section id="story" class="story-section">
+    <div class="story-content">
+        <h2>Discover the Heart of KalyeKaalaman</h2>
+        <div class="story-images">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/images%20(1).jpg" alt="Children learning" class="story-img">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/DSWD-should-subsidize-education-for-street-children-in-MCCT-program-.jpg" alt="HUMSS students teaching" class="story-img">
+        </div>
+<p>KalyeKaalaman began as a heartfelt initiative by a group of HUMSS students who shared a strong belief in the importance of equal access to education for all. Witnessing the struggles of street children in Taguig City, they were inspired to take action, starting with a simple tutoring program. This small project quickly evolved into a full-fledged advocacy program that not only provides academic support but also equips children with life skills and health programs to nurture their minds, bodies, and spirits.</p>
+
+<p>The inspiration for KalyeKaalaman runs even deeper, rooted in the personal journey of a former teacher who was once homeless. Through the kindness of a stranger, she was given the chance to transform her life. After graduating and becoming a teacher, she made it her mission to give back, helping homeless children just as she had once been helped. This teacher's story resonated deeply with the HUMSS students and played a pivotal role in shaping their vision. Her experience of overcoming adversity and becoming an agent of change served as the spark that ignited their shared dream for inclusive education.</p>
+
+<p>KalyeKaalaman is more than just an advocacy—it is a movement driven by a mission to bring opportunities to those who need them the most. The founders are proud of how far their efforts have come and remain committed to creating a future where every child has the chance to learn, grow, and succeed, regardless of their background. Together, they are turning this vision into reality, one child at a time.</p>
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<!-- Add Poppins font -->
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h3 {
+            color: blue;
+        }
+        p {
+            color: black;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+        .gif {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<section id="about">
+    <h2>✨ About Us</h2>
+
+    <!-- What is KalyeKaalaman Section -->
+    <!-- Add GIF before "About Us" -->
+    <div class="gif">
+    </div>
+   <style>
+    .sections-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows wrapping for smaller screens */
+        justify-content: space-between; /* Adds space between items */
+        gap: 20px; /* Adds spacing between sections */
+    }
+
+    .section-content {
+        flex: 1 1 calc(25% - 20px); /* Adjusts width to 25% minus gap */
+        display: flex;
+        flex-direction: column; /* Stack content inside each section */
+        align-items: center; /* Centers content horizontally */
+        text-align: center; /* Centers text */
+        padding: 20px;
+        border: 1px solid #ddd; /* Optional: Add border for better visibility */
+        border-radius: 10px; /* Optional: Add rounded corners */
+        background-color: #f9f9f9; /* Optional: Background color */
+    }
+
+    .section-content img {
+        max-width: 100%; /* Ensures images are responsive */
+        height: auto; /* Maintains aspect ratio */
+        margin-top: 10px;
+        border-radius: 8px; /* Optional: Rounded image corners */
+    }
+
+    h3 {
+        margin-bottom: 10px; /* Adds spacing below the title */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust font size */
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="sections-container">
+    <!-- What is KalyeKaalaman Section -->
+    <div class="section-content">
+        <h3>🌟 What is KalyeKaalaman?</h3>
+        <p>KalyeKaalaman is a community-driven initiative focused on providing accessible educational support and life skills to homeless children and individuals in Taguig City. We believe that education is a powerful tool that can break the cycle of poverty and help individuals achieve a brighter future. Our program is designed to offer both formal education and practical skills that will equip homeless children with the tools they need to succeed in life.</p>
+        <img src="https://childhope.org.ph/wp-content/uploads/2020/08/street-education-program.jpg" alt="KalyeKaalaman Image">
+    </div>
+
+    <!-- Mission Section -->
+    <div class="section-content">
+        <h3>🚀 Mission</h3>
+        <p>KalyeKaalaman is committed to helping homeless children and individuals by providing free, easy-to-access education, life skills training, and health programs. Our mission is to create equal opportunities for every homeless individual in the community to access quality education, irrespective of their background.</p>
+        <img src="https://media.licdn.com/dms/image/v2/C511BAQE09AyKD8BqAg/company-background_10000/company-background_10000/0/1584477847936/childhope_philippines_foundation_inc_cover?e=2147483647&v=beta&t=ENZWYktFSdBjyoloakgQi0kmn77ATJRqdzDIA0taZBM" alt="Mission Image">
+    </div>
+
+    <!-- Vision Section -->
+    <div class="section-content">
+        <h3>🌈 Vision</h3>
+        <p>To create a future where every homeless child and individual has the opportunity to learn, grow, and thrive. Our vision is to build a society where homelessness does not limit one's potential for success and self-improvement.</p>
+        <img src="https://childhope.org.ph/wp-content/uploads/2019/07/img-gallery-01.jpg" alt="Vision Image">
+    </div>
+
+    <!-- Programs Section -->
+    <div class="section-content">
+        <h3>📚 Our Programs</h3>
+        <p>KalyeKaalaman offers a variety of programs aimed at meeting the diverse needs of homeless children and individuals. These programs are designed to provide not just academic knowledge but also essential life skills.</p>
+        <img src="https://www.globalgiving.org/pfil/29268/ph_29268_229470.jpg" alt="Programs Image">
+    </div>
+</div>
+
+
+</section>
+
+
+
+
+
+    <!-- Team Section -->
+<section class="team">
+    <h2>Meet the KalyeKaalaman Team</h2>
+    <div class="team-cards">
+        <div class="team-member">
+                      <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/460279174_2519534418436398_3006024368235046332_n.jpg" alt="Website Designer">
+            <h4 class="role">Project Manager</h4>
+            <p class="name">Alice Grace Fernandez</p>
+            <p class="bio">JBringing creativity and design expertise, Alice creates visually appealing and user-friendly web experiences that embody KalyeKaalaman’s mission and values.</p>
+        </div>
+        <div class="team-member">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/462567669_1284324302701011_3666887019038675567_n.jpg" alt="Content Editor">
+            <h4 class="role">Content Editor</h4>
+            <p class="name">Jea Doron</p>
+            <p class="bio">Jea brings creativity to the forefront, making sure that the content we share is both engaging and informative.</p>
+        </div>
+        <div class="team-member">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42yddcmjy/462555191_867368612251365_8626063156850441400_n.jpg" alt="Content Writer">
+            <h4 class="role">Content Writer</h4>
+            <p class="name">Ausema Ordonez</p>
+            <p class="bio">Creative and insightful, Ausema crafts compelling articles, blog posts, and social media updates that resonate with our audience and align with KalyeKaalaman’s mission.</p>
+        </div>
+        <div class="team-member">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/462544100_3021623437987483_224050577678451904_n.jpg" alt="Project Manager">
+            <h4 class="role">Website Designer</h4>
+                        <p class="name">Allan Bajamonde</p>
+            <p class="bio">Leading our team with experience and dedication, Allan oversees every aspect of KalyeKaalaman’s development.</p>        </div>
+        <div class="team-member">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/460865903_1612951349655875_5823774983592465388_n.jpg" alt="Website developer">
+            <h4 class="role">Website Developer</h4>
+            <p class="name">Althea Louries Poliquit</p>
+            <p class="bio">Skilled in web technologies, Althea develops and maintains the website’s functionality, ensuring a seamless, responsive experience for our visitors.</p>
+        </div>
+        <div class="team-member">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/462537965_542103151925462_1698582446476511996_n.jpg" alt="Website developer">
+            <h4 class="role">Data Analyst</h4>
+            <p class="name">Jacqueline Albestor</p>
+            <p class="bio">With expertise in data analysis, Jacky interprets key metrics to provide actionable insights, helping KalyeKaalaman make informed decisions to enhance performance and impact.</p>
+        </div>
+        <div class="team-member">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/462578708_440120845525569_9028093443743750872_n.jpg" alt="Website developer">
+            <h4 class="role">Data Analyst</h4>
+            <p class="name">Princess Fernandez</p>
+            <p class="bio">With expertise in data analysis, Princess interprets key metrics to provide actionable insights, helping KalyeKaalaman make informed decisions to enhance performance and impact.</p>
+        </div>
+        <div class="team-member">
+            <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/3880e67f-8e30-48d7-bd15-f86b03c5a0c0.jfif" alt="Website Marketer">
+            <h4 class="role">Website Marketer</h4>
+            <p class="name">Eldiver Tarnilla Jr.</p>
+            <p class="bio">With expertise in data analysis, Eldiver interprets key metrics to provide actionable insights, helping KalyeKaalaman make informed decisions to enhance performance and impact.</p>
+        </div>
+    </div>
+</section>
+<style>
+    /* Styling for h2 */
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        color: #007BFF; /* Blue color */
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+    }
+
+</style>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-advocacy">
+        </div>
+        <div class="footer-subscribe">
+            <h4>Subscribe to our Mailing List</h4>
+            <p>We’d love to have you on our next outreach! By joining our mailing list, we’ll let you know what, when, and where our next project will be. Are you in?</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61568552099332" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design%20(2).png" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design.png" alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+                <img src="https://assets.onecompiler.app/42xmxxwrt/42y7xh2ug/Untitled%20design%20(1).png" alt="Instagram Icon">
+            </a>
+        </div>
+        <div class="footer-text">
+            <p style="color: white;">&copy; 2024 KalyeKaalaman. All rights reserved.</p>
+            <p><small style="color: white;">All images, graphics, and media used on this site are not owned by KalyeKaalaman. Credits to their respective owners. We sincerely appreciate their contributions to the project.</small></p>
+        </div>
+    </div>
+</footer>
